@@ -1,0 +1,20 @@
+{"text": "<s>[INST] How do you define a symbol to be a constant? [/INST] DefineConstant[ c ]</s>"}
+{"text": "<s>[INST] How do you define a symbol to be a complex constant? [/INST] DefineConstant[ d, Type -> Complex ]</s>"}
+{"text": "<s>[INST] How do you change the Type of a constant after it has been defined? [/INST] Declare[ d, Type -> {NonNegative,Real} ]</s>"}
+{"text": "<s>[INST] How do you create a Tensor? [/INST] DefineTensor[ alpha, 1 ]</s>"}
+{"text": "<s>[INST] How do you define a contravariant 1-tensor? [/INST] DefineTensor[ v, 1, Variance -> Contravariant ]</s>"}
+{"text": "<s>[INST] How do you create a scalar function? [/INST] DefineTensor[ u, 0, Type -> {NonNegative, Real} ]</s>"}
+{"text": "<s>[INST] How do you specify tensor symmetries for higher-rank tensors? [/INST] DefineTensor[ h, 2, Symmetries -> Symmetric ]</s>"}
+{"text": "<s>[INST] How do you associate a tensor with a bundle other than the default tangent bundle? [/INST] DefineTensor[ omega, 2, Bundle -> fiber, Type -> Complex, Variance -> {Contravariant,Covariant} ]</s>"}
+{"text": "<s>[INST] How do you change certain options, such as Type and Bundle, after a tensor has been defined? [/INST] Declare[ u, Type -> Complex ]</s>"}
+{"text": "<s>[INST] How do you expand any tensor expression in terms of the default basis? [/INST] BasisExpand[alpha]</s>"}
+{"text": "<s>[INST] How do you allow Ricci to correctly interpret an expression such as f[u]? [/INST] DefineMathFunction[ f, Type -> Complex ]</s>"}
+{"text": "<s>[INST] How do you get a tensor product? [/INST] TProd[alpha, beta]</s>"}
+{"text": "<s>[INST] How do you output a wedge product? [/INST] Wedge[alpha, beta]</s>"}
+{"text": "<s>[INST] How do you get a symmetric product? [/INST] SymmetricProduct[alpha,beta]</s>"}
+{"text": "<s>[INST] How do you get a dot product? [/INST] (a.e) [L[i],L[j],L[k]]</s>"}
+{"text": "<s>[INST] How do you get an inner product? [/INST] Inner[a,b]</s>"}
+{"text": "<s>[INST] How do you apply a constant factor in each term of x? [/INST] FactorConstants[x]</s>"}
+{"text": "<s>[INST] How do you expand all tensors in x into component expressions multiplied by the default basis vectors and covectors? [/INST] BasisExpand[2 a]</s>"}
+{"text": "<s>[INST] How you convert a component expression for a tensor back to pure tensor form? [/INST] BasisGather[%34,a]</s>"}
+{"text": "<s>[INST] How do you cause one tensor to always be replaced by some other tensor expression, or to be replaced only when certain indices are inserted? [/INST] DefineRelation[ a, 2 b ]</s>"}
